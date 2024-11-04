@@ -1,3 +1,14 @@
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust this to the specific domains you want to allow
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+https://your-api-url.com/get-answer
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 import openai  # or import your chatbot model here

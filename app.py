@@ -1,4 +1,7 @@
 from fastapi.middleware.cors import CORSMiddleware
+@app.post("/get-answer")
+async def get_answer(question: Question):
+    # Your code here
 
 app.add_middleware(
     CORSMiddleware,
